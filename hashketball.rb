@@ -176,8 +176,6 @@ def player_stats name
 end
 
 def big_shoe_rebounds
-  #students.max_by{|k| k[:test_score] }
-#=> {:name=>"Kate Saunders", :test_score=>99, :sport=>"hockey"}
   big_shoes = allPlayers.max_by{ | player | player[:shoe]}
   big_shoes[:rebounds]
 end
